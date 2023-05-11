@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State var search: String = ""
+    
+    @ObservedObject var viewModel = HomeViewModel()
     
     var body: some View {
         
@@ -19,7 +20,7 @@ struct HomeView: View {
                 .edgesIgnoringSafeArea(.top)
             
             VStack(alignment: .leading, spacing: 0) {
-                TextField("Buscar usuario", text: $search)
+                TextField("Buscar usuario", text: $viewModel.search)
                     .accentColor(Color("CadmiumGreen"))
                 
                 Divider()
@@ -30,10 +31,19 @@ struct HomeView: View {
             .padding(.top, 30)
             .padding(.horizontal, 16)
             
-            PublicationListView()
+            if viewModel.users.isEmpty {
+                Text("List is empty")
+            } else {
+                PublicationListView(items: $viewModel.users)
+            }
+            
+            Spacer()
         }
         .edgesIgnoringSafeArea(.all)
         .background(Color("Cultured"))
+        .onChange(of: viewModel.search) { newValue in
+            viewModel.filterUsersByName(newValue)
+        }
     }
 }
 
@@ -43,28 +53,13 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-struct CardPersonalInfo: Identifiable {
-    var id = UUID()
-    var title: String
-    var phoneNumber: String
-    var email: String
-}
-
 struct PublicationListView: View {
-    let items = [
-        CardPersonalInfo(title: "Leanne Graham", phoneNumber: "1-12334-12345", email: "sincere@april.biz"),
-        CardPersonalInfo(title: "Leanne Graham", phoneNumber: "1-12334-12345", email: "sincere@april.biz"),
-        CardPersonalInfo(title: "Leanne Graham", phoneNumber: "1-12334-12345", email: "sincere@april.biz"),
-        CardPersonalInfo(title: "Leanne Graham", phoneNumber: "1-12334-12345", email: "sincere@april.biz"),
-        CardPersonalInfo(title: "Leanne Graham", phoneNumber: "1-12334-12345", email: "sincere@april.biz"),
-        CardPersonalInfo(title: "Leanne Graham", phoneNumber: "1-12334-12345", email: "sincere@april.biz"),
-        CardPersonalInfo(title: "Leanne Graham", phoneNumber: "1-12334-12345", email: "sincere@april.biz")
-    ]
+    @Binding var items: [User]
     
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false) {
-            ForEach(items) { item in
+            ForEach(items, id: \.id) { item in
                 CardInfoView(item: .constant(item))
             }
         }
@@ -73,21 +68,21 @@ struct PublicationListView: View {
 
 struct CardInfoView: View {
     
-    @Binding var item: CardPersonalInfo
+    @Binding var item: User
     
     var body: some View {
         
         VStack {
             HStack {
                 VStack(alignment: .leading, spacing: 0)  {
-                    Text(item.title)
+                    Text(item.name)
                         .foregroundColor(Color("CadmiumGreen"))
                         .font(.system(size: 25, weight: .medium, design: .default))
                     
                     HStack {
                         Image(systemName: "phone.fill")
                             .foregroundColor(Color("CadmiumGreen"))
-                        Text(item.phoneNumber)
+                        Text(item.phone)
                             .font(.system(size: 16, weight: .regular, design: .default))
                     }
                     .padding(.top, 3)

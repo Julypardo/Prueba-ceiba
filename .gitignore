@@ -90,3 +90,4 @@ fastlane/test_output
 iOSInjectionProject/
 PruebaCeiba.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 PruebaCeiba.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+PruebaCeiba/.DS_Store

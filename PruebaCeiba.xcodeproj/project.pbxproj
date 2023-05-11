@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09729EB72A0D75A700108463 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EB62A0D75A700108463 /* HomeViewModel.swift */; };
+		09729EBA2A0D75E600108463 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EB62A0D75A700108463 /* HomeViewModel.swift */; };
+		09729EBB2A0D75E600108463 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EB62A0D75A700108463 /* HomeViewModel.swift */; };
+		09729EBE2A0D769900108463 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EBD2A0D769900108463 /* User.swift */; };
+		09729EC32A0D8BA500108463 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EC22A0D8BA500108463 /* Repository.swift */; };
+		09729EC52A0D8DF100108463 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EC42A0D8DF100108463 /* HomeViewModelTests.swift */; };
+		09729EC72A0D8FC500108463 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EC62A0D8FC500108463 /* HomeViewTests.swift */; };
 		09E139202A0C4CF000EE4629 /* PruebaCeibaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1391F2A0C4CF000EE4629 /* PruebaCeibaApp.swift */; };
 		09E139242A0C4CF200EE4629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E139232A0C4CF200EE4629 /* Assets.xcassets */; };
 		09E139272A0C4CF200EE4629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E139262A0C4CF200EE4629 /* Preview Assets.xcassets */; };
 		09E139292A0C4CF200EE4629 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E139282A0C4CF200EE4629 /* Persistence.swift */; };
 		09E1392C2A0C4CF200EE4629 /* PruebaCeiba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09E1392A2A0C4CF200EE4629 /* PruebaCeiba.xcdatamodeld */; };
-		09E139362A0C4CF300EE4629 /* PruebaCeibaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E139352A0C4CF300EE4629 /* PruebaCeibaTests.swift */; };
 		09E139402A0C4CF300EE4629 /* PruebaCeibaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1393F2A0C4CF300EE4629 /* PruebaCeibaUITests.swift */; };
 		09E139422A0C4CF300EE4629 /* PruebaCeibaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E139412A0C4CF300EE4629 /* PruebaCeibaUITestsLaunchTests.swift */; };
 		09E1394F2A0C58A300EE4629 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1394E2A0C58A300EE4629 /* HomeView.swift */; };
@@ -38,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09729EB62A0D75A700108463 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		09729EBD2A0D769900108463 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		09729EC22A0D8BA500108463 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		09729EC42A0D8DF100108463 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		09729EC62A0D8FC500108463 /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		09E1391C2A0C4CF000EE4629 /* PruebaCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1391F2A0C4CF000EE4629 /* PruebaCeibaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaCeibaApp.swift; sourceTree = "<group>"; };
 		09E139232A0C4CF200EE4629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +56,6 @@
 		09E139282A0C4CF200EE4629 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		09E1392B2A0C4CF200EE4629 /* PruebaCeiba.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PruebaCeiba.xcdatamodel; sourceTree = "<group>"; };
 		09E139312A0C4CF200EE4629 /* PruebaCeibaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaCeibaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		09E139352A0C4CF300EE4629 /* PruebaCeibaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaCeibaTests.swift; sourceTree = "<group>"; };
 		09E1393B2A0C4CF300EE4629 /* PruebaCeibaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaCeibaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1393F2A0C4CF300EE4629 /* PruebaCeibaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaCeibaUITests.swift; sourceTree = "<group>"; };
 		09E139412A0C4CF300EE4629 /* PruebaCeibaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaCeibaUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -77,6 +87,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09729EB82A0D75C600108463 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09729EB92A0D75D200108463 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09729EB92A0D75D200108463 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				09E1394E2A0C58A300EE4629 /* HomeView.swift */,
+				09729EB62A0D75A700108463 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		09729EBC2A0D765700108463 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09729EBD2A0D769900108463 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09729EBF2A0D87E700108463 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				09E139282A0C4CF200EE4629 /* Persistence.swift */,
+				09729EC22A0D8BA500108463 /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		09E139132A0C4CF000EE4629 = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +144,11 @@
 		09E1391E2A0C4CF000EE4629 /* PruebaCeiba */ = {
 			isa = PBXGroup;
 			children = (
+				09729EBF2A0D87E700108463 /* Repository */,
+				09729EBC2A0D765700108463 /* Model */,
+				09729EB82A0D75C600108463 /* View */,
 				09E1391F2A0C4CF000EE4629 /* PruebaCeibaApp.swift */,
-				09E1394E2A0C58A300EE4629 /* HomeView.swift */,
 				09E139232A0C4CF200EE4629 /* Assets.xcassets */,
-				09E139282A0C4CF200EE4629 /* Persistence.swift */,
 				09E1392A2A0C4CF200EE4629 /* PruebaCeiba.xcdatamodeld */,
 				09E139252A0C4CF200EE4629 /* Preview Content */,
 			);
@@ -121,7 +166,7 @@
 		09E139342A0C4CF300EE4629 /* PruebaCeibaTests */ = {
 			isa = PBXGroup;
 			children = (
-				09E139352A0C4CF300EE4629 /* PruebaCeibaTests.swift */,
+				09729EC42A0D8DF100108463 /* HomeViewModelTests.swift */,
 			);
 			path = PruebaCeibaTests;
 			sourceTree = "<group>";
@@ -131,6 +176,7 @@
 			children = (
 				09E1393F2A0C4CF300EE4629 /* PruebaCeibaUITests.swift */,
 				09E139412A0C4CF300EE4629 /* PruebaCeibaUITestsLaunchTests.swift */,
+				09729EC62A0D8FC500108463 /* HomeViewTests.swift */,
 			);
 			path = PruebaCeibaUITests;
 			sourceTree = "<group>";
@@ -265,9 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09729EC32A0D8BA500108463 /* Repository.swift in Sources */,
 				09E139292A0C4CF200EE4629 /* Persistence.swift in Sources */,
 				09E139202A0C4CF000EE4629 /* PruebaCeibaApp.swift in Sources */,
+				09729EBE2A0D769900108463 /* User.swift in Sources */,
 				09E1394F2A0C58A300EE4629 /* HomeView.swift in Sources */,
+				09729EB72A0D75A700108463 /* HomeViewModel.swift in Sources */,
 				09E1392C2A0C4CF200EE4629 /* PruebaCeiba.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09E139362A0C4CF300EE4629 /* PruebaCeibaTests.swift in Sources */,
+				09729EBB2A0D75E600108463 /* HomeViewModel.swift in Sources */,
 				09E139502A0C58A300EE4629 /* HomeView.swift in Sources */,
+				09729EC52A0D8DF100108463 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +338,8 @@
 				09E139512A0C58A300EE4629 /* HomeView.swift in Sources */,
 				09E139422A0C4CF300EE4629 /* PruebaCeibaUITestsLaunchTests.swift in Sources */,
 				09E139402A0C4CF300EE4629 /* PruebaCeibaUITests.swift in Sources */,
+				09729EBA2A0D75E600108463 /* HomeViewModel.swift in Sources */,
+				09729EC72A0D8FC500108463 /* HomeViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
