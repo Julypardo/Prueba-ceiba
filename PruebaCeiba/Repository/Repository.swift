@@ -29,4 +29,26 @@ class Repository {
             }
         }.resume()
     }
+    
+    func fetchPosts(_ userId: Int, completion: @escaping ([Post]) -> Void) {
+        let url = URL(string: "https://jsonplaceholder.typicode.com/posts?userId=\(userId)")!
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data else {
+                print("Error: \(error?.localizedDescription ?? "Unknown error")")
+                completion([])
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let posts = try decoder.decode([Post].self, from: data)
+                completion(posts)
+            } catch {
+                print("Error decoding data: \(error.localizedDescription)")
+                completion([])
+            }
+        }.resume()
+    }
+    
 }

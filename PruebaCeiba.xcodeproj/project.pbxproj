@@ -14,6 +14,7 @@
 		09729EC32A0D8BA500108463 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EC22A0D8BA500108463 /* Repository.swift */; };
 		09729EC52A0D8DF100108463 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EC42A0D8DF100108463 /* HomeViewModelTests.swift */; };
 		09729EC72A0D8FC500108463 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EC62A0D8FC500108463 /* HomeViewTests.swift */; };
+		09729EC92A0D9E7000108463 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09729EC82A0D9E7000108463 /* Post.swift */; };
 		09E139202A0C4CF000EE4629 /* PruebaCeibaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1391F2A0C4CF000EE4629 /* PruebaCeibaApp.swift */; };
 		09E139242A0C4CF200EE4629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E139232A0C4CF200EE4629 /* Assets.xcassets */; };
 		09E139272A0C4CF200EE4629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E139262A0C4CF200EE4629 /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		09729EC22A0D8BA500108463 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		09729EC42A0D8DF100108463 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		09729EC62A0D8FC500108463 /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		09729EC82A0D9E7000108463 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		09E1391C2A0C4CF000EE4629 /* PruebaCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E1391F2A0C4CF000EE4629 /* PruebaCeibaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaCeibaApp.swift; sourceTree = "<group>"; };
 		09E139232A0C4CF200EE4629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				09729EBD2A0D769900108463 /* User.swift */,
+				09729EC82A0D9E7000108463 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				09729EC32A0D8BA500108463 /* Repository.swift in Sources */,
 				09E139292A0C4CF200EE4629 /* Persistence.swift in Sources */,
 				09E139202A0C4CF000EE4629 /* PruebaCeibaApp.swift in Sources */,
+				09729EC92A0D9E7000108463 /* Post.swift in Sources */,
 				09729EBE2A0D769900108463 /* User.swift in Sources */,
 				09E1394F2A0C58A300EE4629 /* HomeView.swift in Sources */,
 				09729EB72A0D75A700108463 /* HomeViewModel.swift in Sources */,
